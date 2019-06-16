@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>足球联赛管理系统</title> 
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header" style="text-align: center;">
+  <div class="am-g">
+    <h1>足球联赛管理系统</h1>
+<p>生命在于运动</p>
+<p> 热爱生活
+<a href="#">
+          <span class="glyphicon glyphicon-heart-empty"></span>
+</a>
+健康运动
+</p>  
+</div>
+
+  <hr />
+</div>
+
+<div style="padding: 100px 500px;">
+	<form action="" method="post" name="frm">
+		
+		<div class="input-group input-group-lg">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>账号：</span>
+			<input type="text"  id="username" name="username" value="username" class="form-control" style="width:300px;">
+		</div><br>
+        <div class="input-group input-group-lg">
+			<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span>密码：</span>
+			<input type="password" id="password" name="password" value="${passowrd}" class="form-control" style="width:300px;">
+		</div><br>
+		<div>
+			<select class="bs-select form-control" data-live-search="true" style="font-size:20px;color:pray;width:400px;height:50px"  name="type">
+				<option value="1">观众</option>
+				<option value="2">球员</option>
+				<option value="3">教练</option>
+				<option value="4">管理员</option>
+			</select>
+		</div>
+    <br>
+    <button type="button" onclick="check()" class="btn btn-primary" >登录<span class="glyphicon glyphicon-chevron-right"></span></button>
+    </form>
+</div>
+</body>
+
+<script type="text/javascript">
+function check() {
+	var username = document.getElementById("username");
+	var password = document.getElementById("password");
+	if((username.value.length<2)||(username.value.length>10)){ 
+		alert("用户名长度需在2-10字符");
+		return false;
+	}
+	if((password.value.length<2)||(password.value.length>10)){ 
+		alert("密码长度需在2-10字符");
+		return false;
+	}
+	document.frm.submit();
+}
+</script>
+</html>

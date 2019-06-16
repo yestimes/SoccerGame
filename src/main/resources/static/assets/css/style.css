@@ -1,0 +1,114 @@
+
+
+#header {
+    height:150px;
+    width:1200px;
+    font-size:35px;
+    background-image : url(../image/title.jpg);
+    background-repeat : no-repeat;
+    color:black;
+    text-align:center;
+    padding:5px;
+    margin-left:150px;  
+}
+
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1000px;
+    width:200px;
+    float:left;
+    padding:5px;	 
+    margin:00px 0px 0px 100px;     
+}
+#nav li{
+    margin-top:20px;
+    font-size:30px;
+}
+#news tr td{
+	font-size:20px;
+}
+#section {
+    width:1000px;
+    height:1000px;
+    float:left;
+    padding:10px;	 
+    margin:0px 100px 0px 0px; 
+     	 
+} 	 
+
+#footer {
+	height:30px;
+	width:1200px;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    margin:0px 100px 0px 100px;  	
+}
+
+
+/* 表格样式 */
+#maintable{
+	border-collapse:collapse;
+	width:70%;
+	
+}
+
+#maintable table,#maintable th, #maintable td{
+	border: 1px solid black;
+	font-size:25px;
+	min-height:30px;
+}
+
+#maintable #table_content{
+	width: 60%;
+}
+
+
+#infotable{
+	boder:0px white;
+	border-collapse:separate; 
+	border-spacing:10px 20px;
+	width:95%;
+	padding:0px;
+    margin:0px 0px 0px 0px; 
+}
+#infotable table,#infotable th, #infotable td, #infotable tr{
+	border:0px;
+	min-width:250px;
+	font-size:55px;
+}
+#infotable input{
+	font-size:50px;
+}
+
+#matchtable{
+	border: 1px solid black;
+	border-collapse:separate; 
+	border-spacing:5px 5px;
+	min-width:600px;
+	max-width:600px;
+	height:500px;
+}
+#matchtable table,#matchtable th, #matchtable td, #matchtable tr{
+	border:0px;
+	min-width:50px;
+	font-size:30px;
+}
+
+#right{
+	min-width:600px;
+	max-width:600px;
+	min-height:500px;
+	float:right;
+	border: 1px solid black;
+	font-size:25px;
+	min-height:30px;
+	align:top;
+}
+#right td{
+	 valign:top;
+}
